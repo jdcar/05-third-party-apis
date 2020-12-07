@@ -1,10 +1,13 @@
 
 var saveButton = $('.saveBtn')
-var scheduleTextInput = $('#meetingInput9')
-// 
+var scheduleTextInput = $('.meetingInput')
 
-saveButton.on('click', function () {
 
+saveButton.on('click', function (event) {
+
+    var timeSelected = event.target
+
+    console.log(timeSelected.id)
     saveScheduleText();
 
 })
@@ -12,6 +15,11 @@ saveButton.on('click', function () {
 function saveScheduleText() {
 
     scheduleText = scheduleTextInput.val()
-    console.log(scheduleText)
 
+
+
+    // save schedule text to local storage
 }
+
+// integrate the time API
+// Change the color to reflect the time

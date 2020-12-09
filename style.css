@@ -101,3 +101,7 @@ input {
   white-space: pre-wrap;
   
 }
+
+.time-formatted {
+  display: none;
+}

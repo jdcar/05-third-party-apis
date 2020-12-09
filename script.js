@@ -1,25 +1,56 @@
 
+
+
+
 var DateTime = luxon.DateTime;
-var now = DateTime.local().toLocaleString(DateTime.TIME_24_WITH_SECONDS)
-console.log(now)
+var now = DateTime.local().toLocaleString(DateTime.DATETIME_FULL)
+
+displayCurrent()
+function displayCurrent() {
+    current = $('#currentDay').text(now)
+    setInterval(displayCurrent, 1000);
+}
 
 
-// dt.toLocaleString()
+dt = DateTime.local()
+var dateTimeUnformatted = DateTime.local().toString()
 
-// integrate the time API
-// Change the color to reflect the time
+var scheduleText = $('.textarea')
 
-// If now is before meeting
-    // change style to future
+var hour = dt.hour
 
-// else if now is same time as meeting
-    // change display to present
+for (var i = 0; i < scheduleText.length; i++) {
 
-// else now is after meeting time
-    // change display to past
+    times = scheduleText[i].attributes.name.nodeValue
+
+
+    if (hour === Number(times)) {
+        console.log(hour)
+        console.log(Number(times))
+        console.log("Present")
+        $("#" + times).addClass("present")
+
+    } else if (Number(times) < hour) {
+        console.log(hour)
+        console.log(Number(times))
+        console.log("Before")
+        $("#" + times).addClass("past")
+
+    } else if (Number(times) > hour) {
+        console.log(hour)
+        console.log(Number(times))
+        console.log("future")
+        $("#" + times).addClass("future")
+
+    }
+
+}
+// console.log(now)
+
 
 var saveButton9 = $('#button9')
 var scheduleTextInput9 = $('#input9')
+scheduleTime9 = scheduleTextInput9[0].name
 
 var saveButton10 = $('#button10')
 var scheduleTextInput10 = $('#input10')
@@ -42,6 +73,7 @@ var scheduleTextInput15 = $('#input15')
 var saveButton16 = $('#button16')
 var scheduleTextInput16 = $('#input6')
 
+
 renderButton9()
 renderButton10()
 renderButton11()
@@ -51,6 +83,9 @@ renderButton14()
 renderButton15()
 renderButton16()
 
+
+
+// -----------------------------
 function renderButton9() {
 
     scheduleTextInput9.val("")

@@ -1,22 +1,24 @@
+// Jamie Carlstone
+// Coding Boot Camp 2020
+// Unit 05 : Third Pary APIs
+// December 9, 2020
 
 
-
-
+// Get the current time
 var DateTime = luxon.DateTime;
 var now = DateTime.local().toLocaleString(DateTime.DATETIME_FULL)
 
-displayCurrent()
+// Display the current time
 function displayCurrent() {
     current = $('#currentDay').text(now)
-    setInterval(displayCurrent, 1000);
+    
 }
+setInterval(displayCurrent, 1000);
 
-
+// Change the styles of the boxes according to the current time
 dt = DateTime.local()
 var dateTimeUnformatted = DateTime.local().toString()
-
 var scheduleText = $('.textarea')
-
 var hour = dt.hour
 
 for (var i = 0; i < scheduleText.length; i++) {
@@ -45,12 +47,10 @@ for (var i = 0; i < scheduleText.length; i++) {
     }
 
 }
-// console.log(now)
 
-
+// Variables for text input and buttons
 var saveButton9 = $('#button9')
 var scheduleTextInput9 = $('#input9')
-scheduleTime9 = scheduleTextInput9[0].name
 
 var saveButton10 = $('#button10')
 var scheduleTextInput10 = $('#input10')
@@ -73,7 +73,7 @@ var scheduleTextInput15 = $('#input15')
 var saveButton16 = $('#button16')
 var scheduleTextInput16 = $('#input6')
 
-
+// Render text input to page
 renderButton9()
 renderButton10()
 renderButton11()
@@ -85,7 +85,7 @@ renderButton16()
 
 
 
-// -----------------------------
+// Event listeners that add buttons to 
 function renderButton9() {
 
     scheduleTextInput9.val("")

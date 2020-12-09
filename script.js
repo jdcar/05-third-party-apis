@@ -6,15 +6,16 @@
 
 // Get the current time
 var DateTime = luxon.DateTime;
-var now = DateTime.local().toLocaleString(DateTime.DATETIME_FULL)
-
 // Display the current time
 function displayCurrent() {
-    current = $('#currentDay').text(now)
     
-}
-setInterval(displayCurrent, 1000);
+    var now = DateTime.local().toLocaleString(DateTime.DATETIME_FULL)
 
+    current = $('#currentDay').text(now)
+    setInterval(displayCurrent, 1000);
+}
+
+displayCurrent()
 // Change the styles of the boxes according to the current time
 dt = DateTime.local()
 var dateTimeUnformatted = DateTime.local().toString()

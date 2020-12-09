@@ -42,7 +42,7 @@ body {
   resize: none;
   color: #000000;
   border-left: 1px solid black;
-  padding-top: 5px;
+  margin-top: 2px;
 }
 
 
@@ -86,6 +86,7 @@ body {
   background-color: #06AED5;
   color: white;
   white-space: pre-wrap;
+  margin-top: 2px;
 }
 
 .saveBtn i:hover {
@@ -111,3 +112,22 @@ input {
 .time-formatted {
   display: none;
 }
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+  .col-sm-2 {
+
+    width: 20%;
+  
+  }
+
+  .col-sm-8 {
+
+    width: 60%;
+  
+  }
+
+}
+

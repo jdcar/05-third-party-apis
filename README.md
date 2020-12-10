@@ -4,8 +4,8 @@ Jamie Carlstone
 - 05 - Third Party APIs
 - December 10, 2020
 
-https://github.com/jdcar/05-third-party-apis
-https://jdcar.github.io/05-third-party-apis/
+* https://github.com/jdcar/05-third-party-apis
+* https://jdcar.github.io/05-third-party-apis/
 
 
 ## Description
@@ -22,6 +22,8 @@ A daily schedule app. Tested live with a Samsung Galaxy S9, Dell 23" desktop, an
 
 ## Screenshots
 
+![screenshot1](/screenshot_laptop.jpg?raw=true "Laptop")
+![screenshot2](/screenshot_smartphone.jpg?raw=true "Smartphone")
 
 
 ## Acknowledgements

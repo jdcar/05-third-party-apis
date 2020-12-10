@@ -10,7 +10,7 @@ Jamie Carlstone
 
 ## Description
 
-A daily schedule app. Tested live with a Samsung Galaxy S9, Dell 23" desktop, and Dell 14" laptop.
+A daily schedule app. Tested live with a Samsung Galaxy S9, and Dell 14" laptop.
 
 ## Submission files
 
@@ -19,11 +19,13 @@ A daily schedule app. Tested live with a Samsung Galaxy S9, Dell 23" desktop, an
 * script.js
 * style.css
 * luxon.js
+* screenshot_laptop.jpg
+* screenshot_smartphone.jpg
 
 ## Screenshots
 
-![screenshot1](/screenshot_laptop.jpg?raw=true "Laptop")
-![screenshot2](/screenshot_smartphone.jpg?raw=true "Smartphone")
+* ![screenshot1](/screenshot_laptop.jpg?raw=true "Laptop")
+* ![screenshot2](/screenshot_smartphone.jpg?raw=true "Smartphone")
 
 
 ## Acknowledgements

@@ -24,7 +24,7 @@ A daily schedule app. Tested live with a Samsung Galaxy S9, and Dell 14" laptop.
 
 ## Screenshots
 
-* ![screenshot1](/screenshot_laptop.jpg?raw=true "Laptop")
+* ![screenshot1](/screenshot_laptop.JPG?raw=true "Laptop")
 * ![screenshot2](/screenshot_smartphone.jpg?raw=true "Smartphone")
 
 
